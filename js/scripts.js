@@ -1,3 +1,4 @@
+/*
 //day 1
 var myFirst = "Robert";
 var myLast = "Pearcy-German"
@@ -25,3 +26,39 @@ if (userAnswer == true) {
 } else {
     alert("Sorry wrong birthday.");
 }
+
+
+//Functions
+console.log("Whats up");
+array.pop();
+
+//function called square only take one argument
+function square(number){
+//this is the action of the function
+return number * number;
+
+}
+
+//Functions
+console.log("Hello World!")
+*/
+function capitalCase(string) {
+// funtion defintiion arguments donot mater no value until we call the function
+  let words = string.split(' ');
+  words.forEach(word => {
+    //word taking indiviual word and splits up leters // capitalizing first letter using value 0 because 0 is the first placeholder
+    let letters = word.split('');
+    let capped = letters[0].toUpperCase();
+    letters.splice(0, 1, capped);
+  });
+  return words.join(' ');
+};
+
+let newString = capitalCase("peter piper"); //Function CALL
+
+console.log(newString);
+
+//
+function(stuff) {
+  console.log(stuff)
+};
